@@ -4380,4 +4380,13 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 		rating: 3,
 		num: -4,
 	},
+		felinepower: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(spa) {
+			return this.chainModify(2);
+		},
+		name: "Feline Power",
+		rating: 5,
+		num: 269,
+	},
 };
